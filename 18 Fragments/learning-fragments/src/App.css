@@ -1,6 +1,4 @@
-.kg-item{
-  background-color: bisque;
-}
+
 
 .kg-span{
   font-weight: 500;
@@ -8,6 +6,6 @@
 }
 
 .food-heading{
-  background-color: antiquewhite;
   color: dimgray;  
+  text-align: center;
 }
