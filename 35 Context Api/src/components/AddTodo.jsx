@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { useContext } from "react";
-import { IoMdAdd } from "react-icons/io";
+import { useState } from "react";
 import { TodoItemsContext } from "../store/todo-items-store";
 
 function AddTodo() {
@@ -24,23 +23,28 @@ function AddTodo() {
 
   return (
     <div className="container text-center">
-      <form className="row kg-row" onSubmit={handleAddButtonClicked}>
+      <div className="row kg-row">
         <div className="col-6">
           <input
             type="text"
-            ref={handleNameChange}
-            placeholder="Enter Todo here"
+            placeholder="Enter Todo Here"
+            value={todoName}
+            onChange={handleNameChange}
           />
         </div>
         <div className="col-4">
-          <input type="date" ref={handleDateChange} />
+          <input type="date" value={dueDate} onChange={handleDateChange} />
         </div>
         <div className="col-2">
-          <button type="submit" className="btn btn-success kg-button">
-            <IoMdAdd />
+          <button
+            type="button"
+            className="btn btn-success kg-button"
+            onClick={handleAddButtonClicked}
+          >
+            Add
           </button>
         </div>
-      </form>
+      </div>
     </div>
   );
 }
