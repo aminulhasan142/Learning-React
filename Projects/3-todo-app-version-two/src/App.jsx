@@ -21,7 +21,7 @@ function App() {
     },
   ];
   return (
-    <center className="todo-container">
+    <center classNameName="todo-container">
       <AppName />
       <AddTodo></AddTodo>
       <TodoItems todoItems={todoItems}></TodoItems>

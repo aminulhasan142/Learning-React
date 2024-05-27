@@ -6,10 +6,10 @@ import "./App.css";
 
 function App() {
   return (
-    <center className="todo-container">
+    <center classNameName="todo-container">
       <AppName />
       <AddTodo></AddTodo>
-      <div className="items-container">
+      <div classNameName="items-container">
         <TodoItem1></TodoItem1>
         <TodoItem2></TodoItem2>
       </div>

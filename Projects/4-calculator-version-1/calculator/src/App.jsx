@@ -4,7 +4,7 @@ import styles from "./App.module.css";
 
 function App() {
   return (
-    <div className={styles.calculator}>
+    <div classNameName={styles.calculator}>
       <Display></Display>
       <ButtonsContainer></ButtonsContainer>
     </div>
